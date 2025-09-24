@@ -2,8 +2,13 @@
     "patches": [
         {
             "label": "2025-09-23_20-10-23",
-            "content": "",
+            "content": "@@ -1,273 +0,0 @@\n-class Animal:%0A    def __init__(self, species: str, sound: str): #construtor%0A        self.species: str = species%0A        self.sound: str = sound%0A        self.age: int = 0%0A%0A    def __strs__(self):%0A        return f%22%7Bself.species%7D:%7Bself.age%7D:%7Bself.sound%7D%22%0A    %0Adef main():%0A    \n",
             "lines": "0"
+        },
+        {
+            "label": "2025-09-24_14-24-37",
+            "content": "class Animal:\n    def __init__(self, species: str, sound: str): #construtor\n        self.species: str = species\n        self.sound: str = sound\n        self.age: int = 0\n\n    def __strs__(self):\n        return f\"{self.species}:{self.age}:{self.sound}\"\n    \ndef main():\n    ",
+            "lines": "11"
         }
     ]
 }
