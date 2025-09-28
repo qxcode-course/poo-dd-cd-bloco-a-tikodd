@@ -32,10 +32,13 @@ def main():
     toalha = Towel("", "")
     while True:
         line: str = input()
-        args: list[str] = line.split("")
+        args: list[str] = line.split(" ")
         if args[0] == "end":
             break
         elif args[0] == "new":
+            if len(args) < 3:
+                print("Uso: new <cor> <tamanho>")
+                continue
             color = args[1]
             size = args[2]
             toalha = Towel(color, size)

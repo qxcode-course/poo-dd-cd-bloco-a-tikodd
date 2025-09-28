@@ -1,0 +1,15 @@
+2025-09-25 00:08:58, EXEC, v:1, k:toalha, mode:LOCK, rate:0, size:53
+2025-09-25 00:08:59, EXEC, v:1, k:toalha, mode:LOCK, rate:0
+2025-09-25 00:11:01, EXEC, v:1, k:toalha, mode:LOCK, rate:0, size:54
+2025-09-25 00:11:11, EXEC, v:1, k:toalha, mode:LOCK, rate:0
+2025-09-25 00:11:12, EXEC, v:1, k:toalha, mode:LOCK, rate:0
+2025-09-25 00:11:13, EXEC, v:1, k:toalha, mode:LOCK, rate:0
+2025-09-25 00:11:13, EXEC, v:1, k:toalha, mode:LOCK, rate:0
+2025-09-25 00:11:13, EXEC, v:1, k:toalha, mode:LOCK, rate:0
+2025-09-25 00:11:14, EXEC, v:1, k:toalha, mode:LOCK, rate:0
+2025-09-25 00:11:14, EXEC, v:1, k:toalha, mode:LOCK, rate:0
+2025-09-25 00:11:38, MOVE, v:1, k:toalha, mode:PICK
+2025-09-25 00:18:21, MOVE, v:1, k:toalha, mode:BACK
+2025-09-25 00:27:20, SELF, v:1, k:toalha, rate:100, human:MONITORES_VITIN_E_BIA, guide:VIDEOS_NO_YT_E_VIDEOS_DAS_NOSSAS_AULAS, alone:8, study:600
+2025-09-25 00:46:15, MOVE, v:1, k:animal, mode:PICK
+2025-09-25 00:46:20, EXEC, v:1, k:animal, mode:FULL, rate:0, size:10

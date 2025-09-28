@@ -7,8 +7,38 @@
         },
         {
             "label": "2025-09-24_14-24-37",
-            "content": "class Animal:\n    def __init__(self, species: str, sound: str): #construtor\n        self.species: str = species\n        self.sound: str = sound\n        self.age: int = 0\n\n    def __strs__(self):\n        return f\"{self.species}:{self.age}:{self.sound}\"\n    \ndef main():\n    ",
+            "content": "@@ -262,8 +262,12 @@\n main():%0A\n+    \n",
             "lines": "11"
+        },
+        {
+            "label": "2025-09-25_00-46-20",
+            "content": "@@ -254,691 +254,16 @@\n    %0A\n-    def ageBy (self, increment: int):%0A        self.age += increment%0A        if self.age %3E= 4:%0A            print (f%22warning:%7Bself.species%7D morreu%22)%0A            self.age = self.age%0A%0Adef main():%0A    bicho = Animal(%22%22,%22%22)%0A    while True:%0A        line: str = input()%0A        print(%22$%22 + line)%0A        args: list%5Bstr%5D = line.split (%22 %22)%0A        if args %5B0%5D == %22end%22:%0A            break%0A        elif args %5B0%5D == %22init%22:%0A            species = args%5B1%5D%0A            sound = args%5B2%5D%0A            bicho = Animal(species,sound)%0A        elif args %5B0%5D == %22show%22:%0A            print(bicho)%0A        elif args %5B0%5D == %22grow%22:%0A            increment: int = int(args%5B1%5D)%0A            bicho.ageBy(increment)%0Amain()\n+def main():\n %0A\n",
+            "lines": "10"
+        },
+        {
+            "label": "2025-09-27_21-56-59",
+            "content": "@@ -941,37 +941,4 @@\n n()%0A\n-%0A$init vaca muu%0A$show%0Avaca:0:muu%0A\n",
+            "lines": "33"
+        },
+        {
+            "label": "2025-09-28_00-36-14",
+            "content": "@@ -938,8 +938,40 @@\n main()%0A%0A\n+$init vaca muu%0A$show%0Avaca:0:muu%0A\n",
+            "lines": "37"
+        },
+        {
+            "label": "2025-09-28_00-38-13",
+            "content": "@@ -942,36 +942,4 @@\n ()%0A%0A\n-$init vaca muu%0A$show%0Avaca:0:muu%0A\n",
+            "lines": "34"
+        },
+        {
+            "label": "2025-09-28_00-38-40",
+            "content": "@@ -937,8 +937,41 @@\n %0Amain()%0A\n+%0A$init vaca muu%0A$show%0Avaca:0:muu%0A\n",
+            "lines": "37"
+        },
+        {
+            "label": "2025-09-28_00-41-59",
+            "content": "class Animal:\n    def __init__(self, species: str, sound: str): #construtor\n        self.species: str = species\n        self.sound: str = sound\n        self.age: int = 0\n\n    def __strs__(self):\n        return f\"{self.species}:{self.age}:{self.sound}\"\n    \n    def ageBy (self, increment: int):\n        self.age += increment\n        if self.age >= 4:\n            print (f\"warning:{self.species} morreu\")\n            self.age = self.age\n\ndef main():\n    bicho = Animal(\"\",\"\")\n    while True:\n        line: str = input()\n        print(\"$\" + line)\n        args: list[str] = line.split (\" \")\n        if args [0] == \"end\":\n            break\n        elif args [0] == \"init\":\n            species = args[1]\n            sound = args[2]\n            bicho = Animal(species,sound)\n        elif args [0] == \"show\":\n            print(bicho)\n        elif args [0] == \"grow\":\n            increment: int = int(args[1])\n            bicho.ageBy(increment)\nmain()\n",
+            "lines": "33"
         }
     ]
 }
