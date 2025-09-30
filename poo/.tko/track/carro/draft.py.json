@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2025-09-30_01-59-50",
+            "content": "class car:\n    def __init__(self, Pass: int, Gas: int, km: int):\n        self.Pass: int = 0\n        self.Gas: int = 0\n        self.km: int = 0\n\n    def __str__(self):\n        return f\"pass:{self.Pass}, gas:{self.gas}, km:{self.km}\"\n\n    ",
+            "lines": "10"
+        }
+    ]
+}

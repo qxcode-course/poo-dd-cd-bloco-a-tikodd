@@ -9,16 +9,17 @@ expanded:
 - configuracao-e-aquecimento
 - campanha-principal
 - bloco_b-primeiras-classes
+- bloco_b-agregação-simples
+- bloco_b-modificadores-de-acesso
 tasks:
   toalha: '{rate:100, human:MONITORES_VITIN_E_BIA, guide:VIDEOS_NO_YT_E_VIDEOS_DAS_NOSSAS_AULAS,
-
-
-
     alone:8, study:600}'
+  animal: '{rate:100, iagen:copilot_e_chatgpt, guide:aulas_passadas_e_tutoriais_avulsos,
+    alone:5, study:480}'
 flags:
   quests: 0
   tracks: 1
   tasks: 2
   graph: 1
   xray: 0
-index: animal
+index: carro
