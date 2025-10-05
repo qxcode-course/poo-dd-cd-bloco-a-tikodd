@@ -1,4 +1,4 @@
-class Car:
+class Carro:
     def __init__(self, passMax: int = 2, gasMax: int = 100):
         self.passMax = passMax
         self.gasMax = gasMax
@@ -7,7 +7,7 @@ class Car:
         self.km = 0
 
     def __str__(self):
-        return f"pass:{self.Pass}, gas:{self.gas}, km:{self.km}"
+        return f"pass: {self.Pass}, gas: {self.gas}, km: {self.km}"
 
     def enter(self):
         if self.Pass < self.passMax:
@@ -26,8 +26,23 @@ class Car:
         if self.gas > self.gasMax:
             self.gas = self.gasMax
 
+    def driveDistance(self, distance: int):
+        if self.Pass == 0:
+            print("fail: nao ha ninguem no carro")
+            return
+        if self.gas == 0:
+            print("fail: tanque vazio")
+            return
+        if distance > self.gas:
+            print(f"fail: tanque vazio apos andar {self.gas} km")
+            self.km += self.gas
+            self.gas = 0
+        else:
+            self.km += distance
+            self.gas -= distance
+
 def main():
-    carro = Car()
+    carro = Carro()
     while True:
         line: str = input()
         print("$" + line)
@@ -43,7 +58,9 @@ def main():
         elif args[0] == "fuel":
             valueFuel: int = int(args[1])
             carro.fuel(valueFuel)
-       
+        elif args[0] == "drive":
+            distance: int = int(args[1])
+            carro.driveDistance(distance)
 
 main()
     

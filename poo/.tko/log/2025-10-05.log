@@ -95,3 +95,17 @@
 2025-10-05 17:30:16, EXEC, v:1, k:carro, mode:FULL, rate:0
 2025-10-05 17:30:47, EXEC, v:1, k:carro, mode:FULL, rate:0, size:49
 2025-10-05 17:31:11, EXEC, v:1, k:carro, mode:FULL, rate:0
+2025-10-05 17:33:37, MOVE, v:1, k:carro, mode:PICK
+2025-10-05 17:33:40, EXEC, v:1, k:carro, mode:FULL, rate:0
+2025-10-05 17:34:29, EXEC, v:1, k:carro, mode:FULL, rate:0
+2025-10-05 17:34:30, EXEC, v:1, k:carro, mode:FREE
+2025-10-05 18:10:49, EXEC, v:1, k:carro, mode:FULL, rate:0
+2025-10-05 18:13:34, EXEC, v:1, k:carro, mode:FULL, rate:60, size:66
+2025-10-05 18:14:12, EXEC, v:1, k:carro, mode:FULL, rate:60
+2025-10-05 18:15:09, EXEC, v:1, k:carro, mode:FULL, rate:60
+2025-10-05 18:15:12, EXEC, v:1, k:carro, mode:FULL, rate:60
+2025-10-05 18:16:19, EXEC, v:1, k:carro, mode:FULL, rate:100, size:66
+2025-10-05 18:18:02, EXEC, v:1, k:carro, mode:FULL, rate:100
+2025-10-05 18:20:17, EXEC, v:1, k:carro, mode:FULL, rate:100
+2025-10-05 18:20:17, MOVE, v:1, k:carro, mode:BACK
+2025-10-05 18:24:41, SELF, v:1, k:carro, rate:100, human:marcilio, iagen:copilot, guide:video, alone:7, study:280

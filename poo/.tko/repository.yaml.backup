@@ -10,13 +10,11 @@ expanded:
 - bloco_b-primeiras-classes
 tasks:
   toalha: '{rate:100, human:MONITORES_VITIN_E_BIA, guide:VIDEOS_NO_YT_E_VIDEOS_DAS_NOSSAS_AULAS,
-
     alone:9, study:600}'
   animal: '{rate:100, iagen:copilot_e_chatgpt, guide:aulas_passadas_e_tutoriais_avulsos,
-
     alone:6, study:480}'
+  carro: '{rate:100, human:marcilio, iagen:copilot, guide:video, alone:7, study:280}'
   enxugar: '{rate:100, iagen:copilot__chatgpt, guide:aulas_passadas_e_video_aula_avulsa,
-
     alone:8, study:160}'
 flags:
   quests: 0
