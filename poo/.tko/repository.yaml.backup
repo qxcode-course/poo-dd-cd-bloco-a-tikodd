@@ -6,11 +6,9 @@ filter:
 version: 0.0.1
 database: database
 expanded:
-- configuracao-e-aquecimento
 - campanha-principal
-- bloco_b-primeiras-classes
-- bloco_b-agregação-simples
 - bloco_b-modificadores-de-acesso
+- bloco_b-primeiras-classes
 tasks:
   toalha: '{rate:100, human:MONITORES_VITIN_E_BIA, guide:VIDEOS_NO_YT_E_VIDEOS_DAS_NOSSAS_AULAS,
     alone:8, study:600}'
@@ -19,7 +17,7 @@ tasks:
 flags:
   quests: 0
   tracks: 1
-  tasks: 2
+  tasks: 0
   graph: 1
   xray: 0
 index: carro

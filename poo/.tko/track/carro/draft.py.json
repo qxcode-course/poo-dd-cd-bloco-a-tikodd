@@ -2,8 +2,23 @@
     "patches": [
         {
             "label": "2025-09-30_01-59-50",
-            "content": "class car:\n    def __init__(self, Pass: int, Gas: int, km: int):\n        self.Pass: int = 0\n        self.Gas: int = 0\n        self.km: int = 0\n\n    def __str__(self):\n        return f\"pass:{self.Pass}, gas:{self.gas}, km:{self.km}\"\n\n    ",
+            "content": "@@ -38,17 +38,17 @@\n s: int, \n-g\n+G\n as: int,\n@@ -98,17 +98,17 @@\n    self.\n-g\n+G\n as: int \n",
             "lines": "10"
+        },
+        {
+            "label": "2025-10-04_19-47-15",
+            "content": "@@ -2,18 +2,16 @@\n lass car\n-ro\n :%0A    de\n@@ -27,27 +27,24 @@\n _(self, Pass\n-Max\n : int, gasMa\n@@ -45,45 +45,24 @@\n  gas\n-Max\n : int\n-):%0A        self.Pass\n+, km\n : int\n- = 0\n+):\n %0A   \n@@ -79,19 +79,16 @@\n Pass\n-Max\n : int = \n Pass\n@@ -83,23 +83,17 @@\n : int = \n-PassMax\n+0\n %0A       \n@@ -115,37 +115,8 @@\n = 0%0A\n-        self.gasMax = gasMax%0A\n     \n@@ -177,17 +177,17 @@\n eturn f%22\n-P\n+p\n ass:%7Bsel\n@@ -228,590 +228,8 @@\n km%7D%22\n-%0A    %0A    def show(self):%0A        print(str(self))%0A%0A    def enter(self): %0A        if self.Pass %3C self.PassMax:%0A            self.Pass += 1%0A        else:%0A            print('fail: limite de pessoas atingido.')%0A    def fuel(self, amount):%0A        self.gas += amount%0A        if self.gas %3E self.gasMax:%0A            self.gas = self.gasMax%0Adef main():%0A    car = carro(2, 100)  # Exemplo de valores para PassMax e gasMax%0A    while True:%0A        line = input()%0A        if line == %22end%22:%0A            break%0A%0A        print(%22$%22 + line)%0A        parts = line.split()%0A%0A        cmd = parts%5B0%5D%0A%0Amain()\n %0A%0A  \n",
+            "lines": "10"
+        },
+        {
+            "label": "2025-10-04_20-58-23",
+            "content": "@@ -23,24 +23,51 @@\n _init__(self\n+, PassMax: int, gasMax: int\n ):%0A        s\n@@ -101,20 +101,85 @@\n elf.\n-gas: int = 0\n+PassMax: int = PassMax%0A        self.gas: int = 0%0A        self.gasMax = gasMax\n %0A   \n@@ -344,37 +344,367 @@\n ))%0A%0A\n-def main():%0A    car = carro()\n+    def enter(self): %0A        if self.Pass %3C self.PassMax:%0A            self.Pass += 1%0A        else:%0A            print('fail: limite de pessoas atingido.')%0A    def fuel(self, amount):%0A        self.gas += amount%0A        if self.gas %3E self.gasMax:%0A            self.gas = self.gasMax%0Adef main():%0A    car = carro(2, 100)  # Exemplo de valores para PassMax e gasMax\n %0A   \n@@ -822,49 +822,52 @@\n     \n-if line == %22show%22:%0A            car.show()\n+parts = line.split()%0A%0A        cmd = parts%5B0%5D\n %0A%0Ama\n",
+            "lines": "38"
+        },
+        {
+            "label": "2025-10-04_21-25-35",
+            "content": "class carro:\n    def __init__(self):\n        self.Pass: int = 0\n        self.gas: int = 0\n        self.km: int = 0\n\n    def __str__(self):\n        return f\"Pass:{self.Pass}, gas:{self.gas}, km:{self.km}\"\n    \n    def show(self):\n        print(str(self))\n\ndef main():\n    car = carro()\n    while True:\n        line = input()\n        if line == \"end\":\n            break\n\n        print(\"$\" + line)\n        if line == \"show\":\n            car.show()\n\nmain()\n\n    ",
+            "lines": "26"
         }
     ]
 }
